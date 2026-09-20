@@ -11,7 +11,7 @@ screen = pygame.display.set_mode((WIDTH, HEIGHT))  # 默认带标题栏，可随
 pygame.display.set_caption("一箭又一箭")
 clock = pygame.time.Clock()
 
-# 字体（按比例适当调小字号）
+# 字体
 FONT_PATHS = [
     "C:/Windows/Fonts/msyh.ttc",
     "C:/Windows/Fonts/simhei.ttf",
@@ -36,19 +36,19 @@ else:
     FONT_BIG = pygame.font.SysFont("arial", 30)
     FONT_TITLE = pygame.font.SysFont("arial", 38)
 
-# 颜色调整：柔和温暖浅色调
-COLOR_BG = (245, 246, 250)           # 柔和暖白/淡灰背景
+# 颜色
+COLOR_BG = (245, 246, 250)           # 柔和暖白，淡灰背景
 COLOR_CELL = (255, 255, 255)         # 纯白棋盘方格
 COLOR_ARROW = (52, 120, 246)          # 经典蓝色箭头
 COLOR_ERROR = (235, 87, 87)          # 错误提示红
 COLOR_SUCCESS = (46, 184, 114)       # 飞出成功绿
 COLOR_WHITE = (255, 255, 255)        # 按钮纯白文字
-COLOR_TEXT = (45, 55, 72)            # 深灰深蓝主文字，保证对比度
+COLOR_TEXT = (45, 55, 72)            # 深灰深蓝主文字
 COLOR_BUTTON = (90, 105, 130)        # 按钮默认颜色
 COLOR_BUTTON_HOVER = (60, 75, 100)  # 按钮悬停颜色
 COLOR_GRID = (218, 224, 233)         # 棋盘网格边框底色
 
-# 棋盘 5×5（对应小窗口做相应缩放）
+# 棋盘 5×5
 ROWS = 5
 COLS = 5
 CELL_SIZE = 60                       # 格子大小调整为 60
